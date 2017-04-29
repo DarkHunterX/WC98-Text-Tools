@@ -20,4 +20,5 @@
 {ending.txt}  {11_ending}  {11 Ending  -}
 
 {bankswap.asm}             {Bank Swap  -}
-{boxexpand.asm}            {Box Expand -}
+{boxexpandh.asm}           {BoxExpandH -}
+{boxexpandv.asm}           {BoxExpandV -}

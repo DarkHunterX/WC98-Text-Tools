@@ -1,5 +1,6 @@
 //============================================================================
-// Wrecking Crew '98 (Japan) - Expand the tutorial text box to 5 lines
+// Wrecking Crew '98 (Japan) - Expand the tutorial text box vertically
+// to 4+ lines
 //============================================================================
 
 arch snes.cpu; hirom

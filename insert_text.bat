@@ -7,7 +7,8 @@ SETLOCAL EnableDelayedExpansion
 ::============================================================================
 
 :: ROM file
-SET "ROM=game\Wrecking Crew '98 (Japan).sfc"
+IF EXIST "game\*.sfc" FOR /f "delims=" %%a IN ('DIR /b game\*.sfc') DO SET "ROM=game\%%a"
+IF EXIST "game\*.smc" FOR /f "delims=" %%a IN ('DIR /b game\*.smc') DO SET "ROM=game\%%a"
 
 :: Input files & CPrompt output
 SET "FileNames=cmd\filenames.txt"
@@ -39,6 +40,7 @@ SET NL=^& ECHO(
 
 ECHO ==============================================
 ECHO SNES - Wrecking Crew '98 (Japan) Text Inserter
+ECHO Version 1.10 by DarkHunter
 ECHO ============================================== %NL%
 
 CALL :PrepareFiles
@@ -92,17 +94,13 @@ FOR /f "tokens=1,3 delims={}" %%a IN (%FileNames%) DO (
 	)
 	IF !Counter! EQU 21 (
 		ECHO( & SET "InputFile=cmd\asm\%%a" & SET "CPrompt=%%b"
-		:GetLineLength
-		SET /p "LineLength= Enter tutorial box line length [4-6]: "
-		IF "!LineLength!"=="4" SET "Remove=\/\/5 \/\/6" & GOTO :Expand
-		IF "!LineLength!"=="5" SET "Remove=\/\/4 \/\/6" & GOTO :Expand
-		IF "!LineLength!"=="6" SET "Remove=\/\/4 \/\/5" & GOTO :Expand
-		ECHO ERROR: invalid length^! & GOTO :GetLineLength
-		:Expand
-		ECHO( & FINDSTR /v "%Remove%" !InputFile! > !InputFile!.temp
-		bin\xkas -o "%ROM%" !InputFile!.temp >%TempFile%
+		CALL :GetCharLength & CALL :Expand
 		CALL :CheckError
-
+	)
+	IF !Counter! EQU 22 (
+		ECHO( & SET "InputFile=cmd\asm\%%a" & SET "CPrompt=%%b"
+		CALL :GetLineLength & CALL :Expand
+		CALL :CheckError
 	)
 )
 ECHO ----------------------------------------------
@@ -124,10 +122,10 @@ MKDIR "%InsertText%\game\" & COPY "%ROM%" "%InsertText%\game\inserted.sfc" >NUL 
 
 :: Edit the tutorial table file
 IF EXIST %TutorialTable% (
-	CALL bin\jrepl "F7={line}\n"       "*F7={line}"    /l /f %TutorialTable% /o "-"
-	CALL bin\jrepl "$F8={indent},2"    "F8={indent}"   /l /f %TutorialTable% /o "-"
-	CALL bin\jrepl "/F9FF={input}\n\n" "/F9FF={input}" /l /f %TutorialTable% /o "-"
-	CALL bin\jrepl "$FA={delay},1"     "FA={delay}"    /l /f %TutorialTable% /o "-"
+	CALL bin\jrepl "F7={line}\n"    "*F7={line}"  /l /f %TutorialTable% /o "-"
+	CALL bin\jrepl "$F8={indent},2" "F8={indent}" /l /f %TutorialTable% /o "-"
+	CALL bin\jrepl "$FA={delay},1"  "FA={delay}"  /l /f %TutorialTable% /o "-"
+	CALL bin\jrepl "/FF={end}\n\n"  "/FF={end}"   /l /f %TutorialTable% /o "-"
 )
 
 :: Edit the story table file
@@ -163,6 +161,27 @@ IF EXIST %InputFile% (
 GOTO :EOF
 
 
+:GetCharLength
+ECHO( & SET /p "CharLength= Enter tutorial box char length [13-14]: "
+IF "!CharLength!"=="13" SET "Remove=\/\/14" & GOTO :Expand
+IF "!CharLength!"=="14" SET "Remove=\/\/13" & GOTO :Expand
+ECHO ERROR: invalid length^! & GOTO :GetCharLength
+
+
+:GetLineLength
+ECHO( & SET /p "LineLength= Enter tutorial box line length [4-6]: "
+IF "!LineLength!"=="4" SET "Remove=\/\/5 \/\/6" & GOTO :Expand
+IF "!LineLength!"=="5" SET "Remove=\/\/4 \/\/6" & GOTO :Expand
+IF "!LineLength!"=="6" SET "Remove=\/\/4 \/\/5" & GOTO :Expand
+ECHO ERROR: invalid length^! & GOTO :GetLineLength
+
+
+:Expand
+FINDSTR /v "%Remove%" !InputFile! > !InputFile!.temp
+bin\xkas -o "%ROM%" !InputFile!.temp >%TempFile%
+GOTO :EOF
+
+
 :CheckError
 SET "ErrorFlag=0"
 
@@ -190,14 +209,15 @@ IF %Counter% GEQ 20 (
 
 	:: Print error message
 	IF !ErrorFlag! EQU 0 IF %Counter% EQU 20 SET "ErrorMsg=Text loading uses bank $DC"
-	IF !ErrorFlag! EQU 0 IF %Counter% EQU 21 SET "ErrorMsg=Tutorial expanded to %LineLength% lines"
+	IF !ErrorFlag! EQU 0 IF %Counter% EQU 21 SET "ErrorMsg=Tutorial box expanded to %CharLength% chars"
+	IF !ErrorFlag! EQU 0 IF %Counter% EQU 22 SET "ErrorMsg=Tutorial box expanded to %LineLength% lines"
 	IF !ErrorFlag! EQU 1 SET "ErrorMsg=Assembly error^!
 	ECHO !CPrompt! !ErrorMsg!
 )
 
 :: Append to log file & delete temp files
 TYPE %TempFile% >> %LogFile% & DEL %TempFile%
-IF %Counter% EQU 21 DEL !InputFile!.temp
+IF %Counter% GEQ 21 DEL !InputFile!.temp
 
 :: Stop processing if error occured
 IF NOT %ErrorFlag% EQU 0 (
