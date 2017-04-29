@@ -7,7 +7,8 @@ SETLOCAL EnableDelayedExpansion
 ::============================================================================
 
 :: ROM file
-SET "ROM=game\Wrecking Crew '98 (Japan).sfc"
+IF EXIST "game\*.sfc" FOR /f "delims=" %%a IN ('DIR /b game\*.sfc') DO SET "ROM=game\%%a"
+IF EXIST "game\*.smc" FOR /f "delims=" %%a IN ('DIR /b game\*.smc') DO SET "ROM=game\%%a"
 
 :: Script command files
 SET "TutorialCmd=cmd\tutorial"
@@ -39,6 +40,7 @@ SET NL=^& ECHO(
 
 ECHO ============================================
 ECHO SNES - Wrecking Crew '98 (Japan) Text Dumper
+ECHO Version 1.10 by DarkHunter
 ECHO ============================================ %NL%
 
 CALL :PrepareFiles
@@ -70,8 +72,6 @@ FOR /f "tokens=1,3,5 delims={}" %%a IN (%FileNames%) DO (
 )
 ECHO --------------------------------------------
 ECHO Done^^! %NL% %NL%
-
-IF NOT %ErrorCount% EQU 0 ECHO %ErrorCount% errors occured, please check the log for details. %NL%
 
 PAUSE & EXIT
 
@@ -129,6 +129,13 @@ IF %ErrorFlag% EQU 3 SET "ErrorMsg=Missing or invalid command^!"
 IF %ErrorFlag% EQU 4 SET "ErrorMsg=Missing or invalid table file^!"
 ECHO !CPrompt! !ErrorMsg!
 
-:: Append to log file
+:: Append to log file & delete temp files
 TYPE %TempFile% >> %LogFile% & DEL %TempFile%
+
+:: Stop processing if error occured
+IF NOT %ErrorFlag% EQU 0 (
+	ECHO --------------------------------------------
+	ECHO Dumping failed, please check the log for details. %NL% %NL%
+	PAUSE & EXIT
+)
 GOTO :EOF
