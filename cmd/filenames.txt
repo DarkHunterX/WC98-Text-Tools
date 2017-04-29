@@ -1,0 +1,23 @@
+{blocks.txt}  {01_blocks}  {01 Blocks  -}
+{handles.txt} {02_handles} {02 Handles -}
+{panels.txt}  {03_panels}  {03 Panels  -}
+{effects.txt} {04_effects} {04 Effects -}
+{combos.txt}  {05_combos}  {05 Combos  -}
+{bombs.txt}   {06_bombs}   {06 Bombs   -}
+{rules.txt}   {07_rules}   {07 Rules   -}
+{special.txt} {08_special} {08 Special -}
+
+{intro.txt}   {01_intro}   {01 Intro   -}
+{lvl-1.txt}   {02_lvl-1}   {02 Level 1 -}
+{lvl-2.txt}   {03_lvl-2}   {03 Level 2 -}
+{lvl-3.txt}   {04_lvl-3}   {04 Level 3 -}
+{lvl-4.txt}   {05_lvl-4}   {05 Level 4 -}
+{lvl-5.txt}   {06_lvl-5}   {06 Level 5 -}
+{lvl-a.txt}   {07_lvl-a}   {07 Level A -}
+{lvl-b.txt}   {08_lvl-b}   {08 Level B -}
+{lvl-c.txt}   {09_lvl-c}   {09 Level C -}
+{lvl-d.txt}   {10_lvl-d}   {10 Level D -}
+{ending.txt}  {11_ending}  {11 Ending  -}
+
+{bankswap.asm}             {Bank Swap  -}
+{boxexpand.asm}            {Box Expand -}

@@ -1,0 +1,76 @@
+#GAME NAME:              WRECKING CREW '98 (Japan) - SNES
+
+
+#BLOCK NAME:             Special #1-2
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $386BC
+#POINTER TABLE STOP:	 $386C2
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Special #3-4
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $386FF
+#POINTER TABLE STOP:	 $38715
+#POINTER SIZE:           $02
+#POINTER SPACE:          $12
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Special #5-6
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3871A
+#POINTER TABLE STOP:	 $3873B
+#POINTER SIZE:           $02
+#POINTER SPACE:          $1D
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Special #7-8
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3873D
+#POINTER TABLE STOP:	 $3874C
+#POINTER SIZE:           $02
+#POINTER SPACE:          $0B
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Special #9-17
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3875C
+#POINTER TABLE STOP:	 $3877E
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK

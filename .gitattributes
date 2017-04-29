@@ -1,0 +1,8 @@
+# Binary files
+*.exe binary
+
+# Text files
+*.bat text eol=crlf
+*.asm text eol=crlf
+*.tbl text eol=crlf
+*.txt text eol=crlf

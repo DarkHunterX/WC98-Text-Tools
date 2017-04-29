@@ -1,0 +1,106 @@
+#GAME NAME:              WRECKING CREW '98 (Japan) - SNES
+
+
+#BLOCK NAME:             Level 4 - Start
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $150
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $1465EF
+#POINTER TABLE STOP:	 $1465F1
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level 4 - Rematch
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $FC
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $1466AA
+#POINTER TABLE STOP:	 $1466AC
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level 4 - Win (< 2:00)
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $A8
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $14673E
+#POINTER TABLE STOP:	 $146740
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level 4 - Win (> 2:00)
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $54
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $1467AE
+#POINTER TABLE STOP:	 $1467B0
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level 4 - Lose
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $54
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $146824
+#POINTER TABLE STOP:	 $146826
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK

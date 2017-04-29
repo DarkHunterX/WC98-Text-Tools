@@ -1,0 +1,241 @@
+#GAME NAME:              WRECKING CREW '98 (Japan) - SNES
+
+
+#BLOCK NAME:             Panel Effects #1-5
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $381C0
+#POINTER TABLE STOP:	 $381D2
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #6-7
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $381DC
+#POINTER TABLE STOP:	 $381F3
+#POINTER SIZE:           $02
+#POINTER SPACE:          $13
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #8-9
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $381F5
+#POINTER TABLE STOP:	 $381FC
+#POINTER SIZE:           $02
+#POINTER SPACE:          $03
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #10-11
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $381FE
+#POINTER TABLE STOP:	 $3820A
+#POINTER SIZE:           $02
+#POINTER SPACE:          $08
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #12-13
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3821D
+#POINTER TABLE STOP:	 $38223
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #14-18
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38228
+#POINTER TABLE STOP:	 $3823A
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #19-20
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38253
+#POINTER TABLE STOP:	 $38259
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #21-22
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38278
+#POINTER TABLE STOP:	 $38284
+#POINTER SIZE:           $02
+#POINTER SPACE:          $08
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #23-24
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38286
+#POINTER TABLE STOP:	 $3829A
+#POINTER SIZE:           $02
+#POINTER SPACE:          $10
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #25-26
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3829E
+#POINTER TABLE STOP:	 $382BC
+#POINTER SIZE:           $02
+#POINTER SPACE:          $1A
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #27-28
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $382C1
+#POINTER TABLE STOP:	 $382D8
+#POINTER SIZE:           $02
+#POINTER SPACE:          $13
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #29-30
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $382E3
+#POINTER TABLE STOP:	 $382E9
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #31-32
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $382F1
+#POINTER TABLE STOP:	 $382F7
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #33-34
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $382FA
+#POINTER TABLE STOP:	 $3831A
+#POINTER SIZE:           $02
+#POINTER SPACE:          $1C
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #35-36
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38324
+#POINTER TABLE STOP:	 $3832C
+#POINTER SIZE:           $02
+#POINTER SPACE:          $04
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Panel Effects #37-39
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3832E
+#POINTER TABLE STOP:	 $38338
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK

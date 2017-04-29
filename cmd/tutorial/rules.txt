@@ -1,0 +1,136 @@
+#GAME NAME:              WRECKING CREW '98 (Japan) - SNES
+
+
+#BLOCK NAME:             Game Rules #1-4
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38551
+#POINTER TABLE STOP:	 $3855F
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #5-6
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3856F
+#POINTER TABLE STOP:	 $38575
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #7-8
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $385D4
+#POINTER TABLE STOP:	 $385DC
+#POINTER SIZE:           $02
+#POINTER SPACE:          $04
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #9-10
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $385DE
+#POINTER TABLE STOP:	 $385E4
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #11-13
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38647
+#POINTER TABLE STOP:	 $38651
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #14-20
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3865B
+#POINTER TABLE STOP:	 $38675
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #21-22
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38678
+#POINTER TABLE STOP:	 $38681
+#POINTER SIZE:           $02
+#POINTER SPACE:          $05
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #23-24
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3868A
+#POINTER TABLE STOP:	 $38692
+#POINTER SIZE:           $02
+#POINTER SPACE:          $04
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Game Rules #25-27
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3869A
+#POINTER TABLE STOP:	 $386A4
+#POINTER SIZE:           $02
+#POINTER SPACE:          $02
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK

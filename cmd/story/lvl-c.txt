@@ -1,0 +1,85 @@
+#GAME NAME:              WRECKING CREW '98 (Japan) - SNES
+
+
+#BLOCK NAME:             Level C - Start
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $1A4
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $146F94
+#POINTER TABLE STOP:	 $146F96
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level C - Rematch
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $1A4
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $147034
+#POINTER TABLE STOP:	 $147036
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level C - Win
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $FC
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $1470BF
+#POINTER TABLE STOP:	 $1470C1
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Level C - Lose
+#TYPE:                   FIXED_STRING && FIXED_LINE
+#STRING LENGTH:          $54
+#STRING END:             Yes
+#END CTRL:               {end}
+#LINE LENGTH:            $1C
+#LINE END:               Yes
+#LINE CTRL:              {line}
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $147129
+#POINTER TABLE STOP:	 $14712B
+#POINTER SIZE:           $02
+#POINTER SPACE:          $00
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $140000
+#TABLE:                  cmd\WC98_Story.tbl
+#COMMENTS:               No
+#END BLOCK
