@@ -106,12 +106,12 @@
 #END BLOCK
 
 
-#BLOCK NAME:             Game Rules #23-24
+#BLOCK NAME:             Game Rules #23-25
 #TYPE:                   NORMAL
 #METHOD:                 POINTER_RELATIVE
 #POINTER ENDIAN:         LITTLE
 #POINTER TABLE START:    $3868A
-#POINTER TABLE STOP:	 $38692
+#POINTER TABLE STOP:	 $38698
 #POINTER SIZE:           $02
 #POINTER SPACE:          $04
 #ATLAS PTRS:             Yes
@@ -121,7 +121,7 @@
 #END BLOCK
 
 
-#BLOCK NAME:             Game Rules #25-27
+#BLOCK NAME:             Game Rules #26-28
 #TYPE:                   NORMAL
 #METHOD:                 POINTER_RELATIVE
 #POINTER ENDIAN:         LITTLE

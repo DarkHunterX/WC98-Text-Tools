@@ -16,7 +16,37 @@
 #END BLOCK
 
 
-#BLOCK NAME:             Using Panels #3-4
+#BLOCK NAME:             Using Panels #3-5
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $3811B
+#POINTER TABLE STOP:	 $38139
+#POINTER SIZE:           $02
+#POINTER SPACE:          $0C
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Using Panels #6-7
+#TYPE:                   NORMAL
+#METHOD:                 POINTER_RELATIVE
+#POINTER ENDIAN:         LITTLE
+#POINTER TABLE START:    $38143
+#POINTER TABLE STOP:	 $3814D
+#POINTER SIZE:           $02
+#POINTER SPACE:          $06
+#ATLAS PTRS:             Yes
+#BASE POINTER:           $30000
+#TABLE:                  cmd\WC98_Tutorial.tbl
+#COMMENTS:               No
+#END BLOCK
+
+
+#BLOCK NAME:             Using Panels #8-9
 #TYPE:                   NORMAL
 #METHOD:                 POINTER_RELATIVE
 #POINTER ENDIAN:         LITTLE
@@ -31,7 +61,7 @@
 #END BLOCK
 
 
-#BLOCK NAME:             Using Panels #5-6
+#BLOCK NAME:             Using Panels #10-11
 #TYPE:                   NORMAL
 #METHOD:                 POINTER_RELATIVE
 #POINTER ENDIAN:         LITTLE
@@ -46,7 +76,7 @@
 #END BLOCK
 
 
-#BLOCK NAME:             Using Panels #7-8
+#BLOCK NAME:             Using Panels #12-13
 #TYPE:                   NORMAL
 #METHOD:                 POINTER_RELATIVE
 #POINTER ENDIAN:         LITTLE
@@ -61,7 +91,7 @@
 #END BLOCK
 
 
-#BLOCK NAME:             Using Panels #9-13
+#BLOCK NAME:             Using Panels #14-18
 #TYPE:                   NORMAL
 #METHOD:                 POINTER_RELATIVE
 #POINTER ENDIAN:         LITTLE
